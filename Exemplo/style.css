@@ -1,0 +1,17 @@
+.cabecalho {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.cabecalho a {
+    color: white;
+    margin-right: 10px;
+}
+
+.rodape {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

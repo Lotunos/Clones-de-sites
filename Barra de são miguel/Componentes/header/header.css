@@ -1,0 +1,53 @@
+
+/*--esquerda*/
+.divesquerda{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8px;
+    margin-left: 35px;
+}
+.imagem{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.esquerda{
+    text-align: left;
+}
+
+/*--direita*/
+
+.botao{
+    scale: 1.5;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    filter: invert(100%);
+
+}
+.botao:active{
+    scale: 0.9;
+}
+
+.direita{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.divdireita{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 22px;
+    margin-right: 40px;
+}
+/*--nav*/
+
+.ajustenav{
+    background: #0B4790;
+    display: flex;
+    justify-content: space-between;
+    height : 50px;
+}
