@@ -9,7 +9,16 @@ async function carregarCss(arquivo){
     link.href = arquivo;
     document.head.appendChild(link);
 }
-carregarHtml("header", "Componentes/header/header.html");
-carregarHtml("footer", "Componentes/footer/footer.html");
-carregarCss("Componentes/header/header.css");
-carregarCss("Componentes/footer/footer.css");
+async function carregarJs(arquivo){
+    const script = document.createElement("script");
+    script.src = arquivo;
+    document.head.appendChild(script);
+}
+async function principal(){
+await carregarHtml("header", "Componentes/header/header.html");
+await carregarHtml("footer", "Componentes/footer/footer.html");
+await carregarCss("Componentes/header/header.css");
+await carregarCss("Componentes/footer/footer.css");
+await carregarJs("Componentes/header/rota.js");
+}
+principal();

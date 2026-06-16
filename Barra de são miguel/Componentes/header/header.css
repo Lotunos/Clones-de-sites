@@ -19,13 +19,17 @@
 
 .botao{
     scale: 1.5;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: transparent;
     border-radius: 50%;
     border: none;
     cursor: pointer;
     filter: invert(100%);
+    margin-right: 20px;
 
 }
 .botao:active{
@@ -50,4 +54,8 @@
     display: flex;
     justify-content: space-between;
     height : 50px;
+}
+/*--imagemBarra*/
+.logoprefeitura{
+    margin-left: 5%;
 }
