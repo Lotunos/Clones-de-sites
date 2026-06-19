@@ -59,3 +59,45 @@
 .logoprefeitura{
     margin-left: 5%;
 }
+/*--Menu dropdown*/
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.submenu a {
+    padding: 10px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+
