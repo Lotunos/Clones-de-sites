@@ -35,24 +35,49 @@
         <img class = "logoprefeitura" src="Componentes/header/imagens/barra.jpg" alt="Logo Prefeitura">
     </div>
     <div class="divdireita">
+        <a href="../../index.html" class="bi bi-house-fill rota"></a>
         <p id="rota"></p>
     </div>
     <!--Menu-->
-    <nav>
-    <ul class="menu">
-        <li><a href="#">Início</a></li>
-
-        <li class="dropdown">
-            <a href="#">Serviços</a>
-
-            <ul class="submenu">
-                <li><a href="#">Saúde</a></li>
-                <li><a href="#">Educação</a></li>
-                <li><a href="#">Transporte</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">Contato</a></li>
-    </ul>
-</nav>
-    </header>
+    <nav class="ajustenavmenudropdown">
+    <div class="divdireita">
+        <ul class="menu">
+            <li><a href="../../index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#">SERVIÇOS</a>
+                    <ul class="submenu">
+                        <li><a href="#">Saúde</a></li>
+                        <li><a href="#">Educação</a></li>
+                        <li><a href="#">Transporte</a></li>
+                    </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">ORGÃOS</a>
+                    <ul class="submenu">
+                        <li><a href="#">Saúde</a></li>
+                        <li><a href="#">Educação</a></li>
+                    </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">BARRA DE SÃO MIGUEL</a>
+                    <ul class="submenu">
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Turismo</a></li>
+                    </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">TRANSPARÊNCIA</a>
+                    <ul class="submenu">
+                        <li><a href="#">Orçamento</a></li>
+                        <li><a href="#">Licitações</a></li>
+                    </ul>
+            </li>
+        </ul>
+        <form class="container-pesquisa" action="/buscar" method="GET">
+            <input type="search" class="campo-pesquisa" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button type="submit" class="botao-pesquisa">
+                    <span class="bi bi-search"></span> </button>
+        </form>
+    </div>
+    </nav>
+</header>

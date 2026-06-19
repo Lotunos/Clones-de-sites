@@ -44,7 +44,7 @@
 .divdireita{
     display: flex;
     justify-content: flex-end;
-    margin-top: 22px;
+    align-items: center;
     margin-right: 40px;
 }
 /*--nav*/
@@ -59,7 +59,26 @@
 .logoprefeitura{
     margin-left: 5%;
 }
+/*--Rota*/
+.rota{
+    text-decoration: none;
+    color: blue
+}
+#rota a{
+   text-decoration: none;
+   color: blue;
+}
+#rota a:visited{
+    color: blue;
+}
 /*--Menu dropdown*/
+.ajustenavmenudropdown{
+    border-top: 1px solid #ccc;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: center;
+}
 .menu {
     list-style: none;
     display: flex;
@@ -70,18 +89,24 @@
 
 .menu li {
     position: relative;
+    align-items: flex-start;
 }
 
 .menu a {
     text-decoration: none;
     padding: 10px;
     display: block;
+    color: blue;
+    font-size: 16px;
+}
+.menu a:visited{
+    color: blue;
 }
 
 .submenu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0;
     list-style: none;
     padding: 0;
@@ -99,5 +124,49 @@
     display: block;
 }
 
+/*--pesquisa*/
+/* Container que segura o input e o botão */
+.container-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço sutil entre a caixa de texto e o botão azul */
+    margin-right: 10%;
+}
 
+/* Estilização da Caixa de Texto */
+.campo-pesquisa {
+    border: 1px solid #ced4da; /* Borda cinza clara idêntica à imagem */
+    border-radius: 6px;        /* Cantos suavemente arredondados */
+    padding: 8px 14px;         /* Espaçamento interno */
+    font-size: 16px;
+    color: #495057;
+    outline: none;
+    width: 250px;              /* Ajuste a largura como preferir */
+    transition: border-color 0.2s;
+}
+
+/* Efeito opcional ao clicar na caixa de texto */
+.campo-pesquisa:focus {
+    border-color: #008cc1;    /* Destaca a borda ao focar */
+}
+
+/* Estilização do Botão Azul */
+.botao-pesquisa {
+    background-color: #1d98d0; /* O tom de azul vibrante da foto */
+    border: none;
+    border-radius: 6px;        /* O mesmo arredondamento da caixa */
+    color: white;              /* Deixa a lupa branca */
+    padding: 10px 14px;        /* Ajusta o tamanho do botão */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;           /* Tamanho do ícone da lupa */
+    transition: background-color 0.2s;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao-pesquisa:hover {
+    background-color: #1579a7; /* Um azul levemente mais escuro ao passar o mouse */
+}
 
