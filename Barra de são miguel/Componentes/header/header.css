@@ -55,10 +55,14 @@
     justify-content: space-between;
     height : 50px;
 }
-/*--imagemBarra*/
+/*--Imagens e página*/
 .logoprefeitura{
     margin-left: 5%;
 }
+.inversao{
+    filter: invert(1);
+}
+
 /*--Rota*/
 .rota{
     text-decoration: none;
@@ -85,6 +89,7 @@
     gap: 20px;
     padding: 0;
     margin: 0;
+    flex-wrap: nowrap;
 }
 
 .menu li {
@@ -93,36 +98,42 @@
 }
 
 .menu a {
+    margin-right: 5px;
     text-decoration: none;
-    padding: 10px;
     display: block;
-    color: blue;
-    font-size: 16px;
-}
-.menu a:visited{
-    color: blue;
+    letter-spacing: 1px;
+    font-size: 13px;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 
 .submenu {
     display: none;
     position: absolute;
-    top: 90%;
+    top: 200%;
     left: 0;
     list-style: none;
     padding: 0;
     margin: 0;
     min-width: 150px;
-    background: white;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .submenu a {
     padding: 10px;
+    color: white;
 }
 
-.dropdown:hover .submenu {
+.dropdown:focus-within .submenu {
     display: block;
 }
+.dropdown {
+    position: relative;
+    
+}
+
 
 /*--pesquisa*/
 /* Container que segura o input e o botão */
