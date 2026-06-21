@@ -39,8 +39,17 @@
         <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v23.0">
         </script>
-        
     <div id="footer">
+        <script>
+            fetch("Componentes/footer.html").then(response => response.text())
+            .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+
+            if (window.FB) {
+                FB.XFBML.parse();
+            }
+            });
+        </script>
     </div>
     <script src="Componentes/integracao.js">
     </script>

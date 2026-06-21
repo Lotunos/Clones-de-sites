@@ -1,7 +1,25 @@
+/*-primierorodape*/
 .primeirorodape{
+    display: flex;
     margin-top: -15px;
     background-color: rgb(0, 153, 255);
+    flex-direction: row;
+    align-items: flex-start;
 }
+.primeirorodape p,
+.primeirorodape a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 7px;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+}    
+
+.primeirorodape a:hover{
+    color: gray;
+}
+
+/*-esquerda*/
 .esquerdafooter{
     display: flex;
     justify-content: flex-start;
@@ -9,16 +27,29 @@
     margin-left: 7.5%;
     margin-top: 10px;
     width: 400px;
-}
-.esquerdafooter p,a{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 3px;
-    color: white;
+    height: 700px;
 }
 
-a{
-    text-decoration: none;    
+.linha{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid #ccc;
 }
-a:hover{
-    color: gray;
+/*-centro*/
+.centrofooter{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 30px;
+    width: 400px;
+} 
+/*-direita*/
+.direitafooter{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 30px;
+    width: 400px;
 }

@@ -15,10 +15,13 @@ async function carregarJs(arquivo){
     document.head.appendChild(script);
 }
 async function principal(){
-await carregarHtml("header", "Componentes/header/header.html");
-await carregarHtml("footer", "Componentes/footer/footer.html");
-await carregarCss("Componentes/header/header.css");
-await carregarCss("Componentes/footer/footer.css");
-await carregarJs("Componentes/header/rota.js");
+    await carregarHtml("header", "Componentes/header/header.html");
+    await carregarHtml("footer", "Componentes/footer/footer.html");
+    await carregarCss("Componentes/header/header.css");
+    await carregarCss("Componentes/footer/footer.css");
+    await carregarJs("Componentes/header/rota.js");
+    if(window.FB){
+        FB.XFBML.parse(document.getElementById("footer"));
+    }
 }
 principal();
