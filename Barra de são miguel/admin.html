@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - Upload de Imagens</title>
+    <style>
+        /* Um estilo bem simples apenas para organizar os elementos */
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .box-upload { border: 2px dashed #ccc; padding: 20px; max-width: 400px; border-radius: 8px; }
+        button { margin-top: 15px; padding: 10px 15px; cursor: pointer; }
+        #status { margin-top: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Painel Administrativo</h1>
+    <p>Selecione uma imagem para enviar para o site da Barra de São Miguel:</p>
+
+    <div class="box-upload">
+        <input type="file" id="campo-foto" accept="image/*">
+        <br>
+        <button id="btn-enviar">Enviar para o Banco</button>
+        
+        <div id="status"></div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

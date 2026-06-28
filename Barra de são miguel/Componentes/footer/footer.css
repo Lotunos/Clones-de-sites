@@ -53,3 +53,29 @@
     margin-top: 30px;
     width: 400px;
 }
+/*-Segundo rodapé*/
+.segundorodape{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap:50px;
+    flex-direction: row;
+    height: 50px;
+}
+.segundorodape a{
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #8a8a8a;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    width: fit-content;
+    white-space: nowrap;    
+}
+
+.divrodape{
+    margin-left: 10%;
+    display: flex;
+    vertical-align: middle;
+    margin-bottom: 1%;
+}
