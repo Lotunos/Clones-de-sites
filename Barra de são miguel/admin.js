@@ -26,7 +26,7 @@ document.getElementById('btn-enviar').addEventListener('click', async () => {
 
     try {
         // 4. Faz a chamada POST para a sua API Flask
-        const resposta = await fetch('http://localhost:6001/upload', {
+        const resposta = await fetch('http://localhost:6001/noticia', {
             method: 'POST',
             body: dadosFormulario // O navegador configura o Header correto de arquivo automaticamente
         });
