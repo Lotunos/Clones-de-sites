@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class NoticiaDTO {
+public class noticiaDTO {
     @NotNull
     @Size(max=100)
     private String nome_Arquivo;
