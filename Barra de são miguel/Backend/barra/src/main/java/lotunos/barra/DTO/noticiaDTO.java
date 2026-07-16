@@ -16,5 +16,7 @@ public class noticiaDTO {
     @Size(max=100)
     private String nome_Arquivo;
     @NotNull
-    private byte local;
+    private char local;
+    @NotNull
+    private String caminhoArquivo;
 }

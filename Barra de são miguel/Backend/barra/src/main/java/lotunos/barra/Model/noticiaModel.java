@@ -25,5 +25,7 @@ public class noticiaModel {
     private String nome_Arquivo;
     @Column(name="local")
     @NotNull
-    private byte local;
+    private char local;
+    @Column(name="caminho")
+    private String caminhoArquivo;
 }
